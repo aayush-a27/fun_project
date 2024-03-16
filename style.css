@@ -161,31 +161,92 @@ html,body{
 
 ::-webkit-scrollbar {
     width: 6px;
-    
-  }
+}
   
-  /* Track */
+  
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    
-    
+    background: #f1f1f1;    
   }
   
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 20px;
-    
+    border-radius: 20px;  
   }
   
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555555;
     border-radius: 20px;
   }
 
 
-
+.loaderbahar {
+      display: flex;
+      background-color: black;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 99.5vw;
+      z-index: 9;
+      
+    }
+    
+    .insidecontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1vw;
+    }
+    
+    .box1, .box2, .box3 {
+      height: 10vh;
+      background-color: white;
+      width: 0.5vw;
+      animation-duration: 1.3s; /* Duration for individual box animation */
+      animation-iteration-count: infinite;
+    }
+    
+    .box1 {
+      animation-name: scale1;
+      animation-delay: 0s; /* No delay for the first box */
+    }
+    
+    .box2 {
+      animation-name: scale2;
+      animation-delay: 0.2s; /* Delay for the second box */
+    }
+    
+    .box3 {
+      animation-name: scale3;
+      animation-delay: 0.4s; /* Delay for the third box */
+    }
+    
+    @keyframes scale1 {
+      0%, 100% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(2);
+      }
+    }
+    
+    @keyframes scale2 {
+      0%, 100% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(2);
+      }
+    }
+    
+    @keyframes scale3 {
+      0%, 100% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(2);
+      }
+    }
 
 
 
